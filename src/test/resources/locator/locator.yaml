@@ -1,0 +1,159 @@
+#百度地址
+baidu:
+  value: "http://www.baidu.com/"
+#百度news地址
+baidu_news:
+  value: "http://news.baidu.com/"
+搜索文本框:
+  type: id
+  value: kw
+list:
+  type: tagName
+  value: li
+devs:
+  type: xpath
+  value: "//*[@id=\"pane-news\"]"
+#############################################
+##############知车汽配快速发单###############
+#############################################
+#Cookies
+test:
+  type: session
+  value: ".eJw1zjEOwyAMAMC_MHfABgPOZyIbbLVDo4okU9W_N1LV8bZ7h9Wn7fewHPO0W1gfIyyhknUBk9SkErKYuAJ6MXaoXahYY0wdGkfXARSpxOzIHQGi9pKpNsiMwMClVozNEjMLGzqhqVoH9VwEUQpGHJXALw0aop1iuCIvm0_ZbDv-tXO3-evlFD5fPcU1Pg.Dx2Mxw.uJk1c2rDpKnT79NrhRtqMygTXQk"
+master:
+  type: session
+  value: ".eJwlzrERwzAIAMBdqF0gEAh5GZ8A6ZzWjqtcdk-Rn-A_cKxr3ifs7-uZGxyvhB20N-WCxOmEppxSrEkwUTGSJhLDo2XTnokcyDS0cJcuZDJ8SotaqztzNpuIQWuFB-NU7EUrugnp0mSjRM0IHTJoWAwsMRds8Nzz-mdY4fsDBeIuBw.DnPmdQ.ATK7m9XScAkovNOZ-lc8e_uMpuo"
+知车汽配正式库:
+  value: "https://autoparts.cheyunxin.com/quick_open"
+订单中心:
+  type: xpath
+  value: "//*[@id='app']/div[1]/div[1]/div/ul/li[4]/div/span"
+快速开单:
+  type: xpath
+  value: '//*[@id="ORDER_OPEN_KEY$Menu"]/li[1]'
+客户姓名:
+  type: name
+  value: garageUser
+选择客户_客户搜索:
+  type: xpath
+  value: "//input[@placeholder='输入客户名称或者手机号码']"
+搜索_按钮:
+  type: xpath
+  value: "/html/body/div[2]/div/div[2]/div/div[1]/div[2]/span/span/button"
+搜索_列表:
+  type: xpath
+  value: "/html/body/div[2]/div/div[2]/div/div[1]/div[2]/table/tbody"
+手动选择车型:
+  type: xpath
+  value: "//a[contains(text(), '手动选择车型')]"
+A:
+  type: xpath
+  value: '//*[@id="app"]/div[1]/div[2]/div/div[2]/div/ul[1]/li[1]'
+奥迪:
+  type: xpath
+  value: '//*[@id="app"]/div[1]/div[2]/div/div[2]/div/ul[2]/li[1]'
+奥迪100:
+  type: xpath
+  value: "//span[contains(text(),'一汽奥迪100')]"
+奥迪100C4:
+  type: xpath
+  value: '//*[@id="app"]/div[1]/div[2]/div/div[2]/div/div/ul/ul/li'
+奥迪三箱:
+  type: xpath
+  value: '//*[@id="app"]/div[1]/div[2]/div/div[2]/div/div[2]/ul/ul/li[1]/span'
+删除图标:
+  type: xpath
+  value: '//*[@id="app"]/div[1]/div[2]/div/div[2]/div/div/div[3]/div[6]/div/table/tbody/tr[3]/td[1]/div'
+删除清单:
+  type: xpath
+  value: '//*[@id="app"]/div[1]/div[2]/div/div[2]/div/div/div[3]/div[8]/div/table/tbody/tr[1]/td[1]'
+
+
+输入配件名称:
+  type: id
+  value: name0
+输入原厂OE号:
+  type: id
+  value: oe0
+选择品质:
+  type: cssSelector
+  value: 'div.ant-select-selection__placeholder'
+原厂件:
+  type: cssSelector
+  value: 'li.ant-select-dropdown-menu-item.ant-select-dropdown-menu-item-active'
+价格:
+  type: xpath
+  value: "//input[@placeholder='0.00']"
+是否含税:
+  type: xpath
+  value: '//*[@id="app"]/div[1]/div[2]/div/div[2]/div/div/div[3]/div[8]/table/tbody/tr/td[6]/div/div/span'
+
+含税:
+  type: cssSelector
+  value: "li.ant-select-dropdown-menu-item.ant-select-dropdown-menu-item-active"
+质保:
+  type: xpath
+  value: "//*[contains(text(),'选择质保')]"
+无质保:
+  type: cssSelector
+  value: "li.ant-select-dropdown-menu-item.ant-select-dropdown-menu-item-active"
+确认开单:
+  type: xpath
+  value: "//button[@class='ant-btn btn-width88 ant-btn-primary']"
+待发货:
+  type: xpath
+  value: '//*[@id="app"]/div[1]/div[2]/div/div[2]/div/div/div/div[2]/div[2]/div[3]'
+订单管理:
+  value: "https://autoparts.cheyunxin.com/order_manage"
+查看详情:
+  type: xpath
+  value: "//p[contains(text(),'2018-06-30 09:01:33测试品牌1')]/../../td[10]/a"
+立即发货:
+  type: xpath
+  value: '//*[@id="app"]/div[1]/div[2]/div/div[2]/div[2]/div/div/div[4]/button'
+确认发货:
+  type: xpath
+  value: "(//button[@type='button'])[4]"
+
+#############################################
+##############知车汽配账户管理###############
+#############################################
+agencyUrl:
+  value: "http://epc-agency.test.cdecube.com"
+employ_manage:
+  type: xpath
+  value: "//span[text()='账户管理']"
+shop_info:
+  type: xpath
+  value: "//li[text()='店铺信息']"
+shop_info_modify:
+  type: xpath
+  value: "//button[@class='ant-btn ant-btn-primary']"
+up_file:
+  type: xpath
+  value: "//input[@type='file']"
+submit:
+  type: xpath
+  value: "//button[@class='ant-btn submit-btn ant-btn-primary']"
+vm:
+  type: xpath
+  value: "/html/body/div[2]/div/span/div/div/div/div[1]"
+
+#############################################
+##############查询###############
+#############################################
+查询页面:
+  type: xpath
+  value: "(//span[contains(text(), '查询')])[1]"
+查询按钮:
+  type: xpath
+  value: "(//button[@type='button'])[1]"
+请输入搜索内容:
+  type: xpath
+  value: "//span[contains(text(), '请输入搜索内容')]"
+VIN码input输入框:
+  type: xpath
+  value: "//input[@placeholder='请输入VIN码']"
+提示语元素:
+  type: xpath
+  value: "/html/body/div[2]/div/span/div/div"
